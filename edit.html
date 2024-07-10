@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life is Tech! Logo maker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/edit.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <svg class="Bg1" width="665" height="665" viewBox="0 0 665 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M664.364 332.364C664.364 375.963 655.777 419.135 639.092 459.415C622.408 499.695 597.953 536.295 567.124 567.124C536.295 597.953 499.695 622.408 459.415 639.092C419.135 655.777 375.963 664.364 332.364 664.364L332.364 332.364H664.364Z" fill="#FFC300"/>
+      <path d="M560.995 464.364C525.986 525.001 468.324 569.247 400.692 587.369C333.061 605.49 261.001 596.003 200.364 560.995L332.364 332.364L560.995 464.364Z" fill="#00AA2D"/>
+    </svg>
+    <svg class="Bg2" width="850" height="850" viewBox="0 0 850 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M660.034 660.033C610.457 709.61 546.459 742.218 477.21 753.186C407.962 764.154 337.019 752.918 274.549 721.088C212.079 689.258 161.29 638.468 129.46 575.999C97.63 513.529 86.3938 442.586 97.3616 373.338L425.274 425.274L660.034 660.033Z" fill="#00AA2D"/>
+      <path d="M550.568 117.824C615.495 144.283 670.378 190.618 707.353 250.187C744.328 309.756 761.495 379.502 756.394 449.428L425.274 425.274L550.568 117.824Z" fill="#005FFF"/>
+      <path d="M319.477 242.03C358.111 219.703 402.822 210.18 447.201 214.826C491.58 219.471 533.349 238.047 566.522 267.891L425.203 424.974L319.477 242.03Z" fill="#FFC300"/>
+      <path d="M214.573 458.436C210.102 430.852 211.109 402.657 217.535 375.461C223.962 348.266 235.682 322.603 252.026 299.937L424.625 424.397L214.573 458.436Z" fill="#FF0000"/>
+      <path d="M787.258 645.504C740.611 722.087 670.917 781.936 588.165 816.473L424.617 424.617L787.258 645.504Z" fill="#FFC300"/>
+    </svg>
+    <section class="body">
+      <header>
+        <h1>Life is Tech! ロゴメーカー</h1>
+        <div class="headerContents">
+          <div class="headerPan">
+            <a href="top.html"><p>トップ</p></a>
+            <svg
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 0.5L7 6.5L1 12.5"
+                stroke="#585858"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>ロゴ編集</p>
+          </div>
+          <div class="help">
+            <p>?</p>
+          </div>
+        </div>
+      </header>
+      <section class="editPage">
+        <div class="left">
+          <div class="preview">
+            <svg id="Fan6" viewBox="-105 -105 210 210" width="210" height="210">
+              <path fill="#ffc300" d="M 0 0 L 0 -105 A 105 105 0 0 1 74.24621 -74.24621 Z" />
+            </svg>
+            <svg id="Fan5" viewBox="-135 -135 270 270" width="270" height="270">
+              <path fill="#005FFF" d="M 0 0 L 0 -135 A 135 135 0 0 1 135 0 Z" />
+            </svg>
+            <svg id="Fan4" viewBox="-90 -90 180 180" width="180" height="180">
+              <path fill="#00AA2D" d="M 0 0 L 0 -90 A 90 90 0 0 1 63.63961 -63.63961 Z" />
+            </svg>
+            <svg id="Fan3" viewBox="-90 -90 180 180" width="180" height="180">
+              <path fill="#ffc300" d="M 0 0 L 0 -90 A 90 90 0 0 1 90 0 Z" />
+            </svg>
+            <svg id="Fan2" viewBox="-135 -135 270 270" width="270" height="270">
+              <path fill="#ff0000" d="M 0 0 L 0 -135 A 135 135 0 0 1 135 0 Z" />
+            </svg>
+            <svg id="Fan1" viewBox="-75 -75 150 150" width="150" height="150">
+              <path fill="#005FFF" d="M 0 0 L 0 -75 A 75 75 0 0 1 75 0 Z" />
+            </svg>
+          </div>
+          <div class="random">
+            <a id="randomGene" class="button">
+              <div class="buttonContents">
+                <h3 class="buttonText">ランダム生成する</h2>
+                  <svg class="load" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_26_1278)">
+                    <path d="M23.5 4V10H17.5" stroke="#383838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.99 15C20.34 16.8399 19.1096 18.4187 17.4842 19.4985C15.8588 20.5783 13.9265 21.1006 11.9784 20.9866C10.0304 20.8726 8.17216 20.1286 6.68376 18.8667C5.19536 17.6047 4.15743 15.8932 3.72637 13.9901C3.29531 12.0869 3.49448 10.0952 4.29386 8.31508C5.09325 6.53496 6.44954 5.06288 8.15836 4.12065C9.86717 3.17843 11.8359 2.81711 13.768 3.09116C15.7 3.3652 17.4906 4.25975 18.87 5.64001L23.5 10" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_26_1278">
+                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+              </div>
+            </a>
+            <p>※編集中のデータが消えます！！</p>
+          </div>
+          <div class="code">
+            <input placeholder="コードを入力してください。" type="text" id="code">
+            <a id="codeInput" class="button">
+              <div class="buttonContents">
+                <h3 class="buttonText">コードで生成する</h2>
+                <svg class="codeLoad" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_26_1288)">
+                  <path d="M23.5 4V10H17.5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.99 15C20.34 16.8399 19.1096 18.4187 17.4842 19.4985C15.8588 20.5783 13.9265 21.1006 11.9784 20.9866C10.0304 20.8726 8.17216 20.1286 6.68376 18.8667C5.19536 17.6047 4.15743 15.8932 3.72637 13.9901C3.29531 12.0869 3.49448 10.0952 4.29386 8.31508C5.09325 6.53496 6.44954 5.06288 8.15836 4.12065C9.86717 3.17843 11.8359 2.81711 13.768 3.09116C15.7 3.3652 17.4906 4.25975 18.87 5.64001L23.5 10" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_26_1288">
+                  <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="fanSettings Fan1">
+            <div class="previewFan">
+              <svg id="svgpreviewFan1" viewBox="-75 -75 150 150" width="30" height="30">
+                <path fill="#005FFF" d="M 0 0 L 0 -75 A 75 75 0 0 1 75 0 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input type="color" id="colorPicker1" value="#005FFF">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input value="0" id="rText1" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input value="95" id="gText1" type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input value="255" id="bText1" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input value="270" id="positionText1" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="positionSlider1" value="270" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input value="150" id="radiusText1" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="radiusSlider1" value="150" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input value="90" id="angleText1" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="angleSlider1" value="90" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+              
+           </div>
+          </div>
+          <svg width="601" height="1" viewBox="0 0 601 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5H600.5" stroke="#dddddd" stroke-linecap="round"/>
+          </svg>
+          <div class="fanSettings Fan2">
+            <div class="previewFan">
+              <svg id="svgpreviewFan2" viewBox="-135 -135 270 270" width="54" height="54">
+                <path fill="#ff0000" d="M 0 0 L 0 -135 A 135 135 0 0 1 135 0 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input type="color" value="#ff0000" id="colorPicker2">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input id="rText2" value="255" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input id="gText2" value="0" type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input id="bText2" value="0" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input id="positionText2" value="270" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="positionSlider2" value="270" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input id="radiusText2" value="270" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="radiusSlider2" value="270" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input id="angleText2" value="90" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="angleSlider2" value="90" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+              
+           </div>
+          </div>
+          <svg width="601" height="1" viewBox="0 0 601 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5H600.5" stroke="#dddddd" stroke-linecap="round"/>
+          </svg>
+          <div class="fanSettings Fan3">
+            <div class="previewFan">
+              <svg id="svgpreviewFan3" viewBox="-90 -90 180 180" width="36" height="36">
+                <path fill="#ffc300" d="M 0 0 L 0 -90 A 90 90 0 0 1 90 0 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input value="#ffc300" type="color" id="colorPicker3">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input id="rText3" value="255" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input id="gText3" value="195" type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input id="bText3" value="0" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input id="positionText3" value="180" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="180" id="positionSlider3" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input id="radiusText3" value="180" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="180" id="radiusSlider3" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input id="angleText3" value="90" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="90" id="angleSlider3" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+          <svg width="601" height="1" viewBox="0 0 601 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5H600.5" stroke="#dddddd" stroke-linecap="round"/>
+          </svg>
+          <div class="fanSettings Fan4">
+            <div class="previewFan">
+              <svg id="svgpreviewFan4" viewBox="-90 -90 180 180" width="36" height="36">
+                <path fill="#00AA2D" d="M 0 0 L 0 -90 A 90 90 0 0 1 63.63961 -63.63961 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input type="color" id="colorPicker4" value="#00AA2D">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input id="rText4" value="0" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input id="gText4" value="170" type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input id="bText4" value="45" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input id="positionText4" value="135" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="135" id="positionSlider4" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input id="radiusText4" value="180" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="180" id="radiusSlider4" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input id="angleText4" value="45" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="45" id="angleSlider4" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+          <svg width="601" height="1" viewBox="0 0 601 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5H600.5" stroke="#dddddd" stroke-linecap="round"/>
+          </svg>
+          <div class="fanSettings Fan5">
+            <div class="previewFan">
+              <svg id="svgpreviewFan5" viewBox="-135 -135 270 270" width="54" height="54">
+                <path fill="#005FFF" d="M 0 0 L 0 -135 A 135 135 0 0 1 135 0 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input type="color" id="colorPicker5" value="#005FFF">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input id="rText5" value="0" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input id="gText5" value="95" type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input id="bText5" value="255" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input id="positionText5" value="90" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="90" id="positionSlider5" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input id="radiusText5" value="270" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="270" id="radiusSlider5" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input id="angleText5" value="90" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input id="angleSlider5" value="90" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+          <svg width="601" height="1" viewBox="0 0 601 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 0.5H600.5" stroke="#dddddd" stroke-linecap="round"/>
+          </svg>
+          <div class="fanSettings Fan6">
+            <div class="previewFan">
+              <svg id="svgpreviewFan6" viewBox="-105 -105 210 210" width="42" height="42">
+                <path fill="#ffc300" d="M 0 0 L 0 -105 A 105 105 0 0 1 76.24621 -76.24621 Z" />
+              </svg>
+            </div>
+            <div class="setting">
+              <div class="color">
+                <p>色</p>
+                <div class="colorNumber">
+                  <input value="#ffc300" type="color" id="colorPicker6">
+                  <div class="rgb">
+                    <div class="r">
+                      <p>r</p>
+                      <input id="rText6" value="255" type="text">
+                    </div>
+                    <div class="g">
+                      <p>g</p>
+                      <input id="gText6" value="195"type="text">
+                    </div>
+                    <div class="b">
+                      <p>b</p>
+                      <input id="bText6" value="0"type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="position">
+                <p>位置</p>
+                <div class="positionNumber">
+                  <input id="positionText6" value="0" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="0" id="positionSlider6" class="range" type="range" min="0" max="360" step="45">
+                    <p>360</p>
+                  </div>
+                </div>
+              </div>
+              <div class="radius">
+                <p>大きさ</p>
+                <div class="radiusNumber">
+                  <input id="radiusText6" value="210" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="210" id="radiusSlider6" class="range" type="range" min="0" max="300" step="10">
+                    <p>300</p>
+                  </div>
+                </div>
+              </div>
+              <div class="angle">
+                <p>角度</p>
+                <div class="angleNumber">
+                  <input id="angleText6" value="45" class="text" type="text">
+                  <div class="rangeSet">
+                    <p>0</p>
+                    <input value="45" id="angleSlider6" class="range" type="range" min="0" max="180" step="45">
+                    <p>180</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+          <div class="buttons">
+            <a class="button copy" id="codeCopy">
+              <div class="buttonContents">
+                <h3 class="buttonText">コードをコピーする</h2>
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 4H18.5C19.0304 4 19.5391 4.21071 19.9142 4.58579C20.2893 4.96086 20.5 5.46957 20.5 6V20C20.5 20.5304 20.2893 21.0391 19.9142 21.4142C19.5391 21.7893 19.0304 22 18.5 22H6.5C5.96957 22 5.46086 21.7893 5.08579 21.4142C4.71071 21.0391 4.5 20.5304 4.5 20V6C4.5 5.46957 4.71071 4.96086 5.08579 4.58579C5.46086 4.21071 5.96957 4 6.5 4H8.5" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.5 2H9.5C8.94772 2 8.5 2.44772 8.5 3V5C8.5 5.55228 8.94772 6 9.5 6H15.5C16.0523 6 16.5 5.55228 16.5 5V3C16.5 2.44772 16.0523 2 15.5 2Z" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+            </a>
+            <a class="button" href="download.html">
+              <div class="buttonContents">
+                <h3 class="buttonText">ダウンロードする</h2>
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5 15V19C21.5 19.5304 21.2893 20.0391 20.9142 20.4142C20.5391 20.7893 20.0304 21 19.5 21H5.5C4.96957 21 4.46086 20.7893 4.08579 20.4142C3.71071 20.0391 3.5 19.5304 3.5 19V15" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 10L12.5 15L17.5 10" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.5 15V3" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

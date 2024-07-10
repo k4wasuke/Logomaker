@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.05em;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  margin: 0 100px;
+}
+
+.top {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.topBg {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: auto;
+  font-style: normal;
+  color: #f9f9f9;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: auto;
+  font-style: normal;
+  color: #f9f9f9;
+  letter-spacing: 0;
+  margin-top: 60px;
+}
+
+p {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-style: normal;
+  color: #f9f9f9;
+  text-align: justify;
+  font-feature-settings: "palt";
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 480px;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.buttonContents {
+  border: 1px solid #f9f9f9;
+  border-radius: 29px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.buttonText {
+  margin: 0;
+  padding: 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8em;
+  font-style: normal;
+  color: #f9f9f9;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.svg {
+  width: 20px;
+}
+
+.buttonContents:hover {
+  border-color: #f9f9f9;
+  background-color: #f9f9f9;
+  transition: 0.5s;
+}
+
+.buttonContents:hover .buttonText {
+  color: #005fff;
+  transition: 0.5s;
+}
+
+.buttonContents:hover .svg {
+  transform: translateX(5px);
+  transition: 0.5s;
+}
+
+.buttonContents:hover .svg path {
+  fill: #005fff;
+  transition: 0.5s;
+}
