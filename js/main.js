@@ -5,14 +5,6 @@ console.log(jsonCode);
 
 const loading = () => {
   // 配列の中身があればそれぞれの値を代入
-  if (memoryCode != NaN) {
-    for (i = 0; i < 6; i++) {
-      array[i * 4] = jsonCode[i * 4];
-      array[i * 4 + 1] = Number(jsonCode[i * 4 + 1]);
-      array[i * 4 + 2] = Number(jsonCode[i * 4 + 2]);
-      array[i * 4 + 3] = Number(jsonCode[i * 4 + 3]);
-    }
-  }
   [
     color1.value,
     position1.value,
@@ -38,7 +30,7 @@ const loading = () => {
     position6.value,
     radius6.value,
     angle6.value,
-  ] = array;
+  ] = jsonCode;
 };
 
 window.onload = function () {
@@ -50,6 +42,78 @@ window.onload = function () {
   fanChange5();
   fanChange6();
 };
+
+// resetボタンを作る
+const reset = document.querySelector(".reset");
+
+const resetFans = () => {
+  [
+    color1.value,
+    position1.value,
+    radius1.value,
+    angle1.value,
+    color2.value,
+    position2.value,
+    radius2.value,
+    angle2.value,
+    color3.value,
+    position3.value,
+    radius3.value,
+    angle3.value,
+    color4.value,
+    position4.value,
+    radius4.value,
+    angle4.value,
+    color5.value,
+    position5.value,
+    radius5.value,
+    angle5.value,
+    color6.value,
+    position6.value,
+    radius6.value,
+    angle6.value,
+  ] = [
+    "#005fff",
+    270,
+    150,
+    90,
+    "#ff0000",
+    270,
+    270,
+    90,
+    "#ffc300",
+    180,
+    180,
+    90,
+    "#00aa2d",
+    135,
+    180,
+    45,
+    "#005fff",
+    90,
+    270,
+    90,
+    "#ffc300",
+    0,
+    210,
+    45,
+  ];
+};
+
+reset.onclick = function () {
+  resetFans();
+  fanChange1();
+  fanChange2();
+  fanChange3();
+  fanChange4();
+  fanChange5();
+  fanChange6();
+};
+
+// 背景色変更
+const bgButton = document.querySelector(".bgChange");
+
+const bgChange = () => {};
 
 const fanChangeText1 = () => {
   position1.value = positionText1.value;

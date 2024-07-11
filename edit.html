@@ -55,6 +55,8 @@
       <section class="editPage">
         <div class="left">
           <div class="preview">
+            <img class="bgBlack" src="img/previewBg-black.png" alt="">
+            <img class="bgWhite" src="img/previewBg-white.png" alt="">
             <svg id="Fan6" viewBox="-105 -105 210 210" width="210" height="210">
               <path fill="#ffc300" d="M 0 0 L 0 -105 A 105 105 0 0 1 74.24621 -74.24621 Z" />
             </svg>
@@ -74,30 +76,36 @@
               <path fill="#005FFF" d="M 0 0 L 0 -75 A 75 75 0 0 1 75 0 Z" />
             </svg>
           </div>
-          <div class="random">
-            <a id="randomGene" class="button">
-              <div class="buttonContents">
-                <h3 class="buttonText">ランダム生成する</h2>
-                  <svg class="load" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_26_1278)">
-                    <path d="M23.5 4V10H17.5" stroke="#383838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20.99 15C20.34 16.8399 19.1096 18.4187 17.4842 19.4985C15.8588 20.5783 13.9265 21.1006 11.9784 20.9866C10.0304 20.8726 8.17216 20.1286 6.68376 18.8667C5.19536 17.6047 4.15743 15.8932 3.72637 13.9901C3.29531 12.0869 3.49448 10.0952 4.29386 8.31508C5.09325 6.53496 6.44954 5.06288 8.15836 4.12065C9.86717 3.17843 11.8359 2.81711 13.768 3.09116C15.7 3.3652 17.4906 4.25975 18.87 5.64001L23.5 10" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_26_1278">
-                    <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-              </div>
-            </a>
-            <p>※編集中のデータが消えます！！</p>
+          <div class="previewButtons">
+            <div class="random">
+              <a id="randomGene" class="button">
+                <div class="buttonContents">
+                  <h3 class="buttonText">ランダム生成</h2>
+                    <svg class="load" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_26_1278)">
+                      <path d="M23.5 4V10H17.5" stroke="#383838" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.99 15C20.34 16.8399 19.1096 18.4187 17.4842 19.4985C15.8588 20.5783 13.9265 21.1006 11.9784 20.9866C10.0304 20.8726 8.17216 20.1286 6.68376 18.8667C5.19536 17.6047 4.15743 15.8932 3.72637 13.9901C3.29531 12.0869 3.49448 10.0952 4.29386 8.31508C5.09325 6.53496 6.44954 5.06288 8.15836 4.12065C9.86717 3.17843 11.8359 2.81711 13.768 3.09116C15.7 3.3652 17.4906 4.25975 18.87 5.64001L23.5 10" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_26_1278">
+                      <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                </div>
+              </a>
+              <p>※編集中のデータが消えます！！</p>
+            </div>
+            <div class="sub-buttons">
+              <div class="sub-button reset"><p>リセット</p></div>
+              <div class="sub-button bgChange"><p>背景色変更</p></div>
+            </div>
           </div>
           <div class="code">
             <input placeholder="コードを入力してください。" type="text" id="code">
             <a id="codeInput" class="button">
               <div class="buttonContents">
-                <h3 class="buttonText">コードで生成する</h2>
+                <h3 class="buttonText">コードで生成</h2>
                 <svg class="codeLoad" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_26_1288)">
                   <path d="M23.5 4V10H17.5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -506,7 +514,7 @@
           <div class="buttons">
             <a class="button copy" id="codeCopy">
               <div class="buttonContents">
-                <h3 class="buttonText">コードをコピーする</h2>
+                <h3 class="buttonText">コードをコピー</h2>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.5 4H18.5C19.0304 4 19.5391 4.21071 19.9142 4.58579C20.2893 4.96086 20.5 5.46957 20.5 6V20C20.5 20.5304 20.2893 21.0391 19.9142 21.4142C19.5391 21.7893 19.0304 22 18.5 22H6.5C5.96957 22 5.46086 21.7893 5.08579 21.4142C4.71071 21.0391 4.5 20.5304 4.5 20V6C4.5 5.46957 4.71071 4.96086 5.08579 4.58579C5.46086 4.21071 5.96957 4 6.5 4H8.5" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M15.5 2H9.5C8.94772 2 8.5 2.44772 8.5 3V5C8.5 5.55228 8.94772 6 9.5 6H15.5C16.0523 6 16.5 5.55228 16.5 5V3C16.5 2.44772 16.0523 2 15.5 2Z" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -515,7 +523,7 @@
             </a>
             <a class="button" href="download.html" id="download">
               <div class="buttonContents">
-                <h3 class="buttonText">ダウンロードする</h2>
+                <h3 class="buttonText">ダウンロード</h2>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.5 15V19C21.5 19.5304 21.2893 20.0391 20.9142 20.4142C20.5391 20.7893 20.0304 21 19.5 21H5.5C4.96957 21 4.46086 20.7893 4.08579 20.4142C3.71071 20.0391 3.5 19.5304 3.5 19V15" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.5 10L12.5 15L17.5 10" stroke="#585858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
