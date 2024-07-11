@@ -1,3 +1,56 @@
+// 保存した配列を読み出す
+const memoryCode = localStorage.getItem("storage");
+const jsonCode = JSON.parse(memoryCode);
+console.log(jsonCode);
+
+const loading = () => {
+  // 配列の中身があればそれぞれの値を代入
+  if (memoryCode != NaN) {
+    for (i = 0; i < 6; i++) {
+      array[i * 4] = jsonCode[i * 4];
+      array[i * 4 + 1] = Number(jsonCode[i * 4 + 1]);
+      array[i * 4 + 2] = Number(jsonCode[i * 4 + 2]);
+      array[i * 4 + 3] = Number(jsonCode[i * 4 + 3]);
+    }
+  }
+  [
+    color1.value,
+    position1.value,
+    radius1.value,
+    angle1.value,
+    color2.value,
+    position2.value,
+    radius2.value,
+    angle2.value,
+    color3.value,
+    position3.value,
+    radius3.value,
+    angle3.value,
+    color4.value,
+    position4.value,
+    radius4.value,
+    angle4.value,
+    color5.value,
+    position5.value,
+    radius5.value,
+    angle5.value,
+    color6.value,
+    position6.value,
+    radius6.value,
+    angle6.value,
+  ] = array;
+};
+
+window.onload = function () {
+  loading();
+  fanChange1();
+  fanChange2();
+  fanChange3();
+  fanChange4();
+  fanChange5();
+  fanChange6();
+};
+
 const fanChangeText1 = () => {
   position1.value = positionText1.value;
   radius1.value = radiusText1.value;
