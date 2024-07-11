@@ -440,11 +440,6 @@ p {
   cursor: pointer;
 }
 
-/* .buttonContents:hover .buttonText {
-  color: #005fff;
-  transition: 0.3s;
-} */
-
 .code .button:hover .buttonText {
   color: #585858;
   transition: 0.3s;
