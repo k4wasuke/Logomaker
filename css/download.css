@@ -7,7 +7,7 @@
 body {
   background-color: #f0f0f0;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 40px;
 }
 
 header {
@@ -98,4 +98,8 @@ p {
 .help p {
   font-size: 20px;
   font-weight: 700;
+}
+
+.logoOnly {
+  border: 1px solid #000;
 }

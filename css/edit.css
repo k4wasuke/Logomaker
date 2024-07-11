@@ -464,6 +464,11 @@ p {
   transition: 0.3s;
 }
 
+.buttonContents:hover .codeLoad path {
+  stroke: #585858;
+  transition: 0.3s;
+}
+
 .buttonContents:hover .svg path {
   fill: #005fff;
   transition: 0.3s;
