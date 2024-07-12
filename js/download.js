@@ -62,3 +62,69 @@ const saveCode = () => {
 };
 
 editPage.addEventListener("click", saveCode);
+
+const dlButtonAsPNG = document.querySelector(".asPNG");
+const dlButtonAsSVG = document.querySelector(".asSVG");
+
+// SVG形式でダウンロード
+function downloadSvgAsSvg() {
+  // svg要素を取得
+  const svgNode = document.getElementById("svg1");
+  const svgText = new XMLSerializer().serializeToString(svgNode);
+  const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
+  const svgUrl = URL.createObjectURL(svgBlob);
+
+  // a要素を作ってダウンロード
+  const a = document.createElement("a");
+  a.href = svgUrl;
+  a.download = `MySvg.svg`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(svgUrl);
+}
+
+// PNG形式でダウンロード
+function downloadSvgAsPng() {
+  // svg要素を取得
+  const svgNode = document.getElementsById("svg1");
+  const svgText = new XMLSerializer().serializeToString(svgNode);
+  console.log(svgText);
+  const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
+  const svgUrl = URL.createObjectURL(svgBlob);
+
+  // Imageオブジェクトを生成
+  const im = new Image();
+
+  // Imageの作成に少し時間がかかるため、addEventListnerで行う
+  im.addEventListener("load", () => {
+    const width = svgNode.getAttribute("width");
+    const height = svgNode.getAttribute("height");
+
+    // canvasを作成
+    const cvs = document.createElement("canvas");
+    cvs.setAttribute("width", width);
+    cvs.setAttribute("height", height);
+    const ctx = cvs.getContext("2d");
+
+    // canvasに描画(背景は透過)
+    ctx.drawImage(im, 0, 0, width, height);
+    const imgUrl = cvs.toDataURL("image/png");
+
+    // a要素を作ってダウンロード
+    const a = document.createElement("a");
+    a.href = imgUrl;
+    a.download = `MyPng.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(svgUrl);
+    URL.revokeObjectURL(imgUrl);
+  });
+
+  // Imageオブジェクトを、svgデータから作成
+  im.src = svgUrl;
+}
+
+dlButtonAsSVG.addEventListener("click", downloadSvgAsSvg);
+dlButtonAsPNG.addEventListener("click", downloadSvgAsPng);
