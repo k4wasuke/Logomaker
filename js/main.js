@@ -112,8 +112,21 @@ reset.onclick = function () {
 
 // 背景色変更
 const bgButton = document.querySelector(".bgChange");
+const bgWhite = document.querySelector(".bgWhite");
+const bgBlack = document.querySelector(".bgBlack");
 
-const bgChange = () => {};
+const bgChange = () => {
+  let whiteZ = bgWhite.style.zIndex;
+  let blackZ = bgBlack.style.zIndex;
+
+  bgWhite.style.zIndex = blackZ;
+  bgBlack.style.zIndex = whiteZ;
+
+  console.log(bgWhite.style.zIndex);
+  console.log(bgBlack.style.zIndex);
+};
+
+bgButton.addEventListener("click", bgChange);
 
 const fanChangeText1 = () => {
   position1.value = positionText1.value;

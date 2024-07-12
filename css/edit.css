@@ -125,20 +125,22 @@ p {
   width: 400px;
   height: 400px;
   position: absolute;
-  top: -1.5px;
-  left: -1.5px;
+  top: 50%;
+  left: 50%;
   border: 1px solid #585858;
   border-radius: 40px;
+  transform: translate(-50%, -50%);
 }
 
 .bgWhite {
   width: 400px;
   height: 400px;
   position: absolute;
-  top: -1.5px;
-  left: -1.5px;
+  top: 50%;
+  left: 50%;
   border: 1px solid #585858;
   border-radius: 40px;
+  transform: translate(-50%, -50%);
 }
 
 #Fan1 {
@@ -258,8 +260,14 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px solid #000;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0;
+}
+
+.sub-button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .code {
