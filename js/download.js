@@ -77,7 +77,7 @@ function downloadSvgAsSvg() {
   // a要素を作ってダウンロード
   const a = document.createElement("a");
   a.href = svgUrl;
-  a.download = `MySvg.svg`;
+  a.download = `MyLogo.svg`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -87,7 +87,7 @@ function downloadSvgAsSvg() {
 // PNG形式でダウンロード
 function downloadSvgAsPng() {
   // svg要素を取得
-  const svgNode = document.getElementsById("svg1");
+  const svgNode = document.getElementById("svg1");
   const svgText = new XMLSerializer().serializeToString(svgNode);
   console.log(svgText);
   const svgBlob = new Blob([svgText], { type: "image/svg+xml;charset=utf-8" });
@@ -114,7 +114,7 @@ function downloadSvgAsPng() {
     // a要素を作ってダウンロード
     const a = document.createElement("a");
     a.href = imgUrl;
-    a.download = `MyPng.png`;
+    a.download = `MyLogo.png`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
