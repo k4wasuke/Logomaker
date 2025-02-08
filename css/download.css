@@ -105,3 +105,30 @@ p {
   background-color: #fff;
   width: fit-content;
 }
+
+.download {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 30px;
+}
+
+.downloadButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.downloadButton {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 30px;
+  border: 1px solid #333;
+  border-radius: 40px;
+}
+
+.downloadButton:hover {
+  cursor: pointer;
+}
